@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { Mail, Phone, Linkedin, MapPin, Send, Loader2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Contact() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -125,26 +126,26 @@ export default function Contact() {
     {
       icon: <Mail className="w-7 h-7" strokeWidth={1.5} />,
       label: "Email",
-      value: "obidyhasan@gmail.com",
+      value: "sohel.rana.web2@gmail.com",
       href: "mailto:obidyhasan@gmail.com",
     },
     {
       icon: <Phone className="w-7 h-7" strokeWidth={1.5} />,
       label: "Number",
-      value: "+8801625319213",
+      value: "+8801774663876",
       href: "tel:+8801625319213",
     },
     {
       icon: <Linkedin className="w-7 h-7" strokeWidth={1.5} />,
       label: "Linked In",
-      value: "obidyhasan",
-      href: "https://linkedin.com/in/obidyhasan",
+      value: "sohel-rana",
+      href: "https://linkedin.com/in/sohelrana55",
       underline: true,
     },
     {
       icon: <MapPin className="w-7 h-7" strokeWidth={1.5} />,
       label: "Address",
-      value: "Khulna, Bangladesh",
+      value: "Dinajpur, Bangladesh",
       href: null,
     },
   ];
@@ -152,19 +153,20 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#080808]"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0a0e27]"
     >
+      {/* [#080808] */}
       {/* Starry canvas */}
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full z-0" />
 
       {/* Subtle glow */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="absolute top-1/3 left-1/3 w-[500px] h-[300px] bg-purple-900/10 rounded-full blur-[150px]" />
-        <div className="absolute bottom-1/3 right-1/3 w-[400px] h-[250px] bg-blue-900/10 rounded-full blur-[130px]" />
+        <div className="absolute top-1/3 left-1/3 w-125 h-75 bg-purple-900/10 rounded-full blur-[150px]" />
+        <div className="absolute bottom-1/3 right-1/3 w-100 h-62.5 bg-blue-900/10 rounded-full blur-[130px]" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-6 py-20">
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-6 py-10">
         {/* Header */}
         <div className="text-center mb-14">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -207,8 +209,8 @@ export default function Contact() {
           <div className="flex flex-col gap-4">
             {sent ? (
               <div className="flex flex-col items-center justify-center py-20 text-center">
-                <div className="w-16 h-16 rounded-full bg-purple-500/10 border border-purple-500/30 flex items-center justify-center mb-4">
-                  <Send className="w-7 h-7 text-purple-400" />
+                <div className="w-16 h-16 rounded-full bg-purple-200/10 border border-purple-200/30 flex items-center justify-center mb-4">
+                  <Send className="w-7 h-7 text-purple-200" />
                 </div>
                 <h3 className="text-white text-xl font-bold mb-2">
                   Message Sent!
@@ -216,15 +218,16 @@ export default function Contact() {
                 <p className="text-gray-400 text-sm mb-6">
                   I&apos;ll get back to you as soon as possible.
                 </p>
-                <button
+                <Button
+                  variant="outline"
                   onClick={() => {
                     setSent(false);
                     setFormState({ name: "", email: "", message: "" });
                   }}
-                  className="text-xs text-purple-400 hover:text-purple-300 transition-colors"
+                  className="text-xs"
                 >
                   Send another →
-                </button>
+                </Button>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -235,13 +238,13 @@ export default function Contact() {
                   </label>
                   <input
                     type="text"
-                    placeholder="enter name"
+                    placeholder="Enter Your Name..."
                     value={formState.name}
                     onChange={(e) =>
                       setFormState((p) => ({ ...p, name: e.target.value }))
                     }
                     required
-                    className="w-full bg-[#111111] border border-gray-700/80 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-purple-500/60 focus:bg-[#161616] transition-all duration-300"
+                    className="w-full bg-transparent border border-gray-700/80 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-purple-200/60 transition-all duration-300"
                   />
                 </div>
 
@@ -252,13 +255,13 @@ export default function Contact() {
                   </label>
                   <input
                     type="email"
-                    placeholder="enter email"
+                    placeholder="Enter Your Email..."
                     value={formState.email}
                     onChange={(e) =>
                       setFormState((p) => ({ ...p, email: e.target.value }))
                     }
                     required
-                    className="w-full bg-[#111111] border border-gray-700/80 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-purple-500/60 focus:bg-[#161616] transition-all duration-300"
+                    className="w-full bg-transparent border border-gray-700/80 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-purple-200/60 transition-all duration-300"
                   />
                 </div>
 
@@ -269,19 +272,20 @@ export default function Contact() {
                   </label>
                   <textarea
                     rows={5}
-                    placeholder="enter message"
+                    placeholder="Enter Your Message..."
                     value={formState.message}
                     onChange={(e) =>
                       setFormState((p) => ({ ...p, message: e.target.value }))
                     }
                     required
-                    className="w-full bg-[#111111] border border-gray-700/80 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-purple-500/60 focus:bg-[#161616] transition-all duration-300 resize-none"
+                    className="w-full bg-transparent border border-gray-700/80 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-purple-200/60 transition-all duration-300 resize-none"
                   />
                 </div>
 
                 {/* Send button */}
                 <div>
-                  <button
+                  <Button
+                    variant="outline"
                     type="submit"
                     disabled={sending}
                     className="px-8 py-3 bg-purple-600 hover:bg-purple-500 active:bg-purple-700 text-white text-sm font-semibold rounded-lg transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-60 disabled:cursor-not-allowed flex items-center gap-2"
@@ -294,7 +298,7 @@ export default function Contact() {
                     ) : (
                       "Send Message"
                     )}
-                  </button>
+                  </Button>
                 </div>
               </form>
             )}
