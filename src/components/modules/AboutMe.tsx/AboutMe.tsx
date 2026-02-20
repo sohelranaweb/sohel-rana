@@ -5,11 +5,12 @@ const AboutMe = () => {
     <section className="container mx-auto px-4 py-20">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
         {/* Image - 1/3 */}
-        <div className="md:col-span-1">
+        <div className="md:col-span-1 ">
           <img
-            src="https://i.ibb.co.com/Pst6TmQs/sohel-rana.png"
+            //     src="https://i.ibb.co.com/Pst6TmQs/sohel-rana.png"
+            src="https://i.ibb.co.com/1t5Zzr1M/sohel-rana-portfolio.png"
             alt="Sohel Rana"
-            className="w-full rounded-lg object-cover"
+            className="w-full border border-amber-50 rounded-full object-cover"
           />
         </div>
 
