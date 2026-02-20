@@ -153,7 +153,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0a0e27]"
+      className="relative flex items-center justify-center overflow-hidden bg-[#0a0e27]"
     >
       {/* [#080808] */}
       {/* Starry canvas */}
