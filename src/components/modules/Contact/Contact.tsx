@@ -169,8 +169,10 @@ export default function Contact() {
       <div className="relative z-10 w-full max-w-6xl mx-auto px-6 py-10">
         {/* Header */}
         <div className="text-center mb-14">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Let&apos;s Work Together
+          <h2 className="text-4xl font-bold text-white mb-4">
+            <span className="bg-linear-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+              Let&apos;s Work Together
+            </span>
           </h2>
           <p className="text-gray-400 text-base max-w-xl mx-auto">
             I&apos;m always open to discussing new projects, creative ideas, or
