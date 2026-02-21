@@ -17,7 +17,7 @@ const projects: Project[] = [
     title: "AI Healthcare Platform",
     description:
       "An AI-powered platform that connects patients with doctors using smart recommendation algorithms and real-time appointment booking.",
-    image: "/projects/project.png",
+    image: "/projects/project.PNG",
     tags: [
       "Next.js",
       "TypeScript",
@@ -37,7 +37,7 @@ const projects: Project[] = [
     title: "E-Commerce Dashboard",
     description:
       "A full-stack e-commerce admin dashboard with real-time analytics, inventory management, and order tracking.",
-    image: "/projects/project2.png",
+    image: "/projects/project2.PNG",
     tags: ["React", "Node.js", "MongoDB", "Chart.js"],
     githubUrl: "https://github.com/yourhandle/project2",
     liveUrl: "https://project2.vercel.app",
@@ -46,7 +46,7 @@ const projects: Project[] = [
     title: "Real-time Chat App",
     description:
       "A modern chat application with real-time messaging, file sharing, and group conversation support.",
-    image: "/projects/project3.png",
+    image: "/projects/project3.PNG",
     tags: ["Next.js", "Socket.io", "PostgreSQL", "Redis"],
     githubUrl: "https://github.com/yourhandle/project3",
     liveUrl: "https://project3.vercel.app",
