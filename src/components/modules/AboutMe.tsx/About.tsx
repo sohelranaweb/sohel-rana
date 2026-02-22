@@ -1,16 +1,26 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 
 const About = () => {
   return (
-    <section className="container mx-auto px-4 py-10" id="about">
+    <section className="max-w-7xl mx-auto px-4 py-10" id="about">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
         {/* Image - 1/3 */}
         <div className="md:col-span-1 ">
-          <img
+          {/* <img
             //     src="https://i.ibb.co.com/Pst6TmQs/sohel-rana.png"
             src="https://i.ibb.co.com/1t5Zzr1M/sohel-rana-portfolio.png"
             alt="Sohel Rana"
+            className="w-full border border-white/20 rounded-full object-cover"
+          /> */}
+          <Image
+            src="/profile/sohel-rana-portfolio.png"
+            alt="Sohel Rana"
+            width={1024}
+            height={1024}
+            quality={80}
+            priority
             className="w-full border border-white/20 rounded-full object-cover"
           />
         </div>

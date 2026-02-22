@@ -2,20 +2,6 @@
 
 import { useState, useRef, MouseEvent } from "react";
 
-// const technologies = [
-//   { name: "React", icon: "⚛️", category: "Frontend", color: "#61DAFB" },
-//   { name: "Next.js", icon: "▲", category: "Framework", color: "#FFFFFF" },
-//   { name: "TypeScript", icon: "📘", category: "Language", color: "#3178C6" },
-//   { name: "Node.js", icon: "🟢", category: "Backend", color: "#339933" },
-//   { name: "Tailwind", icon: "🎨", category: "CSS", color: "#06B6D4" },
-//   { name: "MongoDB", icon: "🍃", category: "Database", color: "#47A248" },
-//   { name: "PostgreSQL", icon: "🐘", category: "Database", color: "#4169E1" },
-//   { name: "Docker", icon: "🐳", category: "DevOps", color: "#2496ED" },
-//   { name: "Git", icon: "📦", category: "Tools", color: "#F05032" },
-//   { name: "Prisma", icon: "💎", category: "ORM", color: "#2D3748" },
-//   { name: "Express", icon: "🚂", category: "Backend", color: "#FFFFFF" },
-//   { name: "JavaScript", icon: "⚡", category: "Language", color: "#F7DF1E" },
-// ];
 import { FaReact, FaNode, FaDocker, FaGitAlt, FaJs } from "react-icons/fa";
 import { IoLogoVercel } from "react-icons/io5";
 import {
@@ -168,7 +154,7 @@ export default function Skills() {
         <div
           ref={containerRef}
           onMouseMove={handleMouseMove}
-          className="relative max-w-6xl mx-auto"
+          className="relative max-w-7xl mx-auto"
         >
           {/* Spotlight Effect */}
           <div

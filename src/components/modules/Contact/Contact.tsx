@@ -127,13 +127,14 @@ export default function Contact() {
       icon: <Mail className="w-7 h-7" strokeWidth={1.5} />,
       label: "Email",
       value: "sohel.rana.web2@gmail.com",
-      href: "mailto:obidyhasan@gmail.com",
+      href: "mailto:sohel.rana.web2@gmail.com",
+      breakAll: true,
     },
     {
       icon: <Phone className="w-7 h-7" strokeWidth={1.5} />,
       label: "Number",
       value: "+8801774663876",
-      href: "tel:+8801625319213",
+      href: "tel:+8801774663876",
     },
     {
       icon: <Linkedin className="w-7 h-7" strokeWidth={1.5} />,
@@ -166,7 +167,7 @@ export default function Contact() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-6 py-10">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 py-10">
         {/* Header */}
         <div className="text-center mb-14">
           <h2 className="text-4xl font-bold text-white mb-4">
@@ -193,12 +194,12 @@ export default function Contact() {
                 } ${i === 0 ? "rounded-tl-sm" : ""} ${i === 1 ? "rounded-tr-sm" : ""} ${i === 2 ? "rounded-bl-sm" : ""} ${i === 3 ? "rounded-br-sm" : ""}`}
               >
                 <span className="text-white">{card.icon}</span>
-                <div>
+                <div className="">
                   <p className="text-white font-semibold text-base mb-1">
                     {card.label}
                   </p>
                   <p
-                    className={`text-gray-400 text-sm ${card.underline ? "underline underline-offset-2" : ""}`}
+                    className={`text-gray-400 text-sm ${card.breakAll ? "break-all" : ""} ${card.underline ? "underline underline-offset-2" : ""}`}
                   >
                     {card.value}
                   </p>

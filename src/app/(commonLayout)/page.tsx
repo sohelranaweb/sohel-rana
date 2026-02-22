@@ -10,6 +10,7 @@ import Skills4 from "@/components/modules/Skills/Skills";
 import Skills5 from "@/components/modules/Skills/Skills5";
 import Skills6 from "@/components/modules/Skills/Skills6";
 import Head from "next/head";
+import Blogs from "@/components/modules/Blogs/Blogs";
 
 export default async function Home() {
   return (
@@ -27,6 +28,9 @@ export default async function Home() {
         </AnimatedSection>
         <AnimatedSection>
           <Projects />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Blogs />
         </AnimatedSection>
         <AnimatedSection>
           <Contact />

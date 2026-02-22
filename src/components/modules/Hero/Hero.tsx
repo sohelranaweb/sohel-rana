@@ -39,7 +39,7 @@ const Hero = () => {
 
   return (
     <section
-      className="container mx-auto px-4 pt-20 pb-10 flex items-center justify-center overflow-x-hidden"
+      className="max-w-7xl mx-auto px-4 pt-20 pb-10 flex items-center justify-center overflow-x-hidden"
       id="hero"
     >
       <motion.div

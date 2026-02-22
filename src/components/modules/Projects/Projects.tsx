@@ -60,7 +60,7 @@ const projects: Project[] = [
     description:
       "DigiCash Frontend is a modern, responsive web application designed to provide users with a seamless digital wallet experience, similar to Bkash, Nagad, or Rocket.",
     image: "/projects/project3.PNG",
-    tags: ["Next.js", "Socket.io", "PostgreSQL", "Redis"],
+    tags: ["Reactt.js", "TypeScript", "MongoDB", "JWT", "Redis", "Mongoose"],
     githubFrontendUrl:
       "https://github.com/sohelranaweb/digicash-management-system-fronted-",
     githubBackendUrl:
@@ -102,7 +102,7 @@ export default function Projects() {
       className="relative min-h-screen overflow-hidden py-10"
     >
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+      <div className="relative z-10 max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
           <span className="inline-block text-xs tracking-[0.4em] text-blue-400/60 uppercase font-mono mb-4">

@@ -18,7 +18,7 @@ const PublicNavbar = async () => {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-[#0a0e27]/80 backdrop-blur-md border-b border-white/10">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+      <div className="max-w-7xl mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center space-x-2">
           <span className="text-xl font-bold text-primary">Sohel</span>
         </Link>
