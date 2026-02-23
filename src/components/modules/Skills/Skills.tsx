@@ -158,9 +158,10 @@ export default function Skills() {
         >
           {/* Spotlight Effect */}
           <div
-            className="pointer-events-none absolute inset-0 transition-opacity duration-300 z-10"
+            className="pointer-events-none absolute transition-opacity duration-300 z-10"
             style={{
-              background: `radial-gradient(400px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59, 130, 246, 0.15), transparent 40%)`,
+              inset: "-200px",
+              background: `radial-gradient(400px circle at ${mousePosition.x + 200}px ${mousePosition.y + 200}px, rgba(59, 130, 246, 0.15), transparent 40%)`,
             }}
           />
 
