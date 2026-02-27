@@ -1,3 +1,5 @@
+import DashboardNavbar from "@/components/modules/Dashboard/DashboardNavbar";
+import DashboardSidebar from "@/components/modules/Dashboard/DashboardSidebar";
 import React from "react";
 
 export const dynamic = "force-dynamic";
@@ -9,11 +11,9 @@ const CommonDashboardLayout = async ({
 }) => {
   return (
     <div className="flex h-screen overflow-hidden">
-      {/* <DashboardSidebar /> */}
-      <h1>Dashboard Sidebar</h1>
+      <DashboardSidebar />
       <div className="flex flex-1 flex-col overflow-hidden">
-        {/* <DashboardNavbar /> */}
-        <h1>Dashboard Navbar</h1>
+        <DashboardNavbar />
         <main className="flex-1 overflow-y-auto bg-muted/10 p-4 md:p-6">
           <div className="">{children}</div>
         </main>
